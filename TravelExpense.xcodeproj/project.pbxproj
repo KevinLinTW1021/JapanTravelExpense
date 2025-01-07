@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		0A76C2772D2CC917006BA3E1 /* JapanTravelExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanTravelExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A76C2772D2CC917006BA3E1 /* TravelExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0A76C2792D2CC917006BA3E1 /* JapanTravelExpense */ = {
+		0A76C2792D2CC917006BA3E1 /* TravelExpense */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JapanTravelExpense;
+			path = TravelExpense;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		0A76C26E2D2CC917006BA3E1 = {
 			isa = PBXGroup;
 			children = (
-				0A76C2792D2CC917006BA3E1 /* JapanTravelExpense */,
+				0A76C2792D2CC917006BA3E1 /* TravelExpense */,
 				0A76C2782D2CC917006BA3E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		0A76C2782D2CC917006BA3E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A76C2772D2CC917006BA3E1 /* JapanTravelExpense.app */,
+				0A76C2772D2CC917006BA3E1 /* TravelExpense.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A76C2762D2CC917006BA3E1 /* JapanTravelExpense */ = {
+		0A76C2762D2CC917006BA3E1 /* TravelExpense */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A76C2872D2CC918006BA3E1 /* Build configuration list for PBXNativeTarget "JapanTravelExpense" */;
+			buildConfigurationList = 0A76C2872D2CC918006BA3E1 /* Build configuration list for PBXNativeTarget "TravelExpense" */;
 			buildPhases = (
 				0A76C2732D2CC917006BA3E1 /* Sources */,
 				0A76C2742D2CC917006BA3E1 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0A76C2792D2CC917006BA3E1 /* JapanTravelExpense */,
+				0A76C2792D2CC917006BA3E1 /* TravelExpense */,
 			);
-			name = JapanTravelExpense;
+			name = TravelExpense;
 			packageProductDependencies = (
 			);
 			productName = JapanTravelExpense;
-			productReference = 0A76C2772D2CC917006BA3E1 /* JapanTravelExpense.app */;
+			productReference = 0A76C2772D2CC917006BA3E1 /* TravelExpense.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0A76C2722D2CC917006BA3E1 /* Build configuration list for PBXProject "JapanTravelExpense" */;
+			buildConfigurationList = 0A76C2722D2CC917006BA3E1 /* Build configuration list for PBXProject "TravelExpense" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A76C2762D2CC917006BA3E1 /* JapanTravelExpense */,
+				0A76C2762D2CC917006BA3E1 /* TravelExpense */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JapanTravelExpense/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TravelExpense/Preview Content\"";
 				DEVELOPMENT_TEAM = 7DY93YB2FR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JapanTravelExpense/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TravelExpense/Preview Content\"";
 				DEVELOPMENT_TEAM = 7DY93YB2FR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A76C2722D2CC917006BA3E1 /* Build configuration list for PBXProject "JapanTravelExpense" */ = {
+		0A76C2722D2CC917006BA3E1 /* Build configuration list for PBXProject "TravelExpense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A76C2852D2CC918006BA3E1 /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A76C2872D2CC918006BA3E1 /* Build configuration list for PBXNativeTarget "JapanTravelExpense" */ = {
+		0A76C2872D2CC918006BA3E1 /* Build configuration list for PBXNativeTarget "TravelExpense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A76C2882D2CC918006BA3E1 /* Debug */,

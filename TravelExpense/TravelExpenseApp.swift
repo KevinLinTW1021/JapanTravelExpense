@@ -1,6 +1,6 @@
 //
-//  JapanTravelExpenseApp.swift
-//  JapanTravelExpense
+//  TravelExpenseApp.swift
+//  TravelExpense
 //
 //  Created by KevinLin on 2025/1/7.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct JapanTravelExpenseApp: App {
+struct TravelExpenseApp: App {
     let container: ModelContainer
     
     init() {
