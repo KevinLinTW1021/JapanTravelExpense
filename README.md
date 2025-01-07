@@ -1,4 +1,4 @@
-# Japan Travel Expense Tracker (旅遊記帳 App)
+# Travel Expense Tracker (旅遊記帳 App)
 
 一個專門為在日本旅行設計的 iOS 記帳應用程式，目前支援日幣與台幣轉換功能。
 往後會新增其他國家幣值的支援。
