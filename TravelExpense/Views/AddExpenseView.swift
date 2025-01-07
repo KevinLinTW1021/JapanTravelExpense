@@ -9,11 +9,16 @@ struct AddExpenseView: View {
     let trip: Trip
     @State private var amount = 0.0
     @State private var currency: Currency
-    @State private var category = ""
+    @State private var category = "餐飲"
     @State private var note = ""
     @State private var date = Date()
     @State private var isIncome = false
     @State private var location = ""
+    
+    private let categories = [
+        "餐飲", "交通", "住宿", "購物",
+        "景點門票", "伴手禮", "其他"
+    ]
     
     private var currentSettings: Settings {
         settings.first ?? Settings()
@@ -46,7 +51,17 @@ struct AddExpenseView: View {
                 }
                 
                 Section {
-                    TextField("類別", text: $category)
+                    Picker("類別", selection: $category) {
+                        ForEach(categories, id: \.self) { category in
+                            Text(category).tag(category)
+                        }
+                        Text("自定義").tag("")
+                    }
+                    
+                    if category.isEmpty {
+                        TextField("自定義類別", text: $category)
+                    }
+                    
                     TextField("備註", text: $note)
                     TextField("地點", text: $location)
                 }

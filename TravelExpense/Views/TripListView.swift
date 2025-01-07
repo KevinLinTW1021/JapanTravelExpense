@@ -146,13 +146,15 @@ struct TripRowView: View {
                         .tint(progress < 0.1 ? .red : (progress < 0.3 ? .orange : .blue))
                 }
             } else {
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack {
-                        Text("總支出")
-                        Spacer()
-                        Text("\(numberFormatter.string(from: NSNumber(value: -totalExpenses)) ?? "0") \(Currency(rawValue: trip.budgetCurrency)?.symbol ?? "")")
+                if totalExpenses != 0 {
+                    VStack(alignment: .leading, spacing: 4) {
+                        HStack {
+                            Text("總支出")
+                            Spacer()
+                            Text("\(numberFormatter.string(from: NSNumber(value: -totalExpenses)) ?? "") \(Currency(rawValue: trip.budgetCurrency)?.symbol ?? "")")
+                        }
+                        .font(.subheadline)
                     }
-                    .font(.subheadline)
                 }
             }
             
