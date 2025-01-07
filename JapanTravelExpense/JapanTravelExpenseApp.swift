@@ -10,23 +10,44 @@ import SwiftData
 
 @main
 struct JapanTravelExpenseApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+    let container: ModelContainer
+    
+    init() {
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            let schema = Schema([
+                Trip.self,
+                Expense.self,
+                Settings.self,
+                ExchangeRate.self
+            ])
+            let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: false)
+            container = try ModelContainer(for: schema, configurations: [modelConfiguration])
+            
+            // 確保有初始設置
+            let context = container.mainContext
+            let settingsRequest = FetchDescriptor<Settings>()
+            let settings = try context.fetch(settingsRequest)
+            if settings.isEmpty {
+                let initialSettings = Settings()
+                context.insert(initialSettings)
+            }
+            
+            // 確保有初始匯率
+            let rateRequest = FetchDescriptor<ExchangeRate>()
+            let rates = try context.fetch(rateRequest)
+            if rates.isEmpty {
+                let initialRate = ExchangeRate()
+                context.insert(initialRate)
+            }
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
-    }()
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TripListView()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(container)
     }
 }
